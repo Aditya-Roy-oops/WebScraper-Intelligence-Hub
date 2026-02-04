@@ -17,7 +17,7 @@ logging.getLogger("langchain_google_genai").setLevel(logging.CRITICAL)
 # --- Page Configuration ---
 st.set_page_config(
     page_title="WebScraper | Intelligence Hub", 
-    page_icon="🛡️", 
+    page_icon="🌐", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -378,5 +378,6 @@ else:
                         # Extra Button to See All Data if needed
                         if not found_match:
                             st.warning("Since no match was found, you can verify the raw data in the Sidebar 'Data Inspector'.")
+
 
 st.markdown("<div style='position: fixed; bottom: 10px; right: 20px; opacity: 0.5; font-size: 0.7rem;'>WebScraper | RAG Intelligence </div>", unsafe_allow_html=True)
